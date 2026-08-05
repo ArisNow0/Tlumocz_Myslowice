@@ -39,25 +39,31 @@
   <div class="flag-stripe-vertical"></div>
 
 <div class="lang-switcher">
-  <img id="langcur">
+  <img id="langcur" src="flag.jpg" alt="Current Language Flag"/>
 
-  div
+  <div class="lang-options hidden" >
+    <div class="lang-option" data-lang="mw"><img src="flag.jpg" alt="Mysłowiöcki Flag"/> Mysłowiöcki</div>
+    <div class="lang-option" data-lang="pl"><img src="pl.png" alt="Polski Flag"/> Polski</div>
+    <div class="lang-option" data-lang="ua"><img src="ua.png" alt="Українська Flag"/> Українська</div>
+    <div class="lang-option" data-lang="en"><img src="en.png" alt="English Flag"/> English</div>
+    <div class="lang-option" data-lang="ru"><img src="Zov.jpg" alt="Русский Flag"/> Русский</div>
+  </div>
 </div>
 
   <main class="translator-shell">
     <header class="header">
       <div class="eagle-emblem">
-        <img src="logo.png" alt="Эмблема орла" />
+        <img id="logo" src="logo.png" alt="Эмблема орла" />
       </div>
       <div>
-        <h1>Myslovitze Translator</h1>
-        <p class="subtitle">Official Translator of the Free City of Myslovitze</p>
+        <h1 data-i18n="title">Myslowitze Translator</h1>
+        <p class="subtitle" data-i18n="subtitle">Official Translator of the Free City of Myslowitze</p>
       </div>
     </header>
 
     <div class="controls">
   <div class="field">
-    <label id="sourceLabel">From Language</label>
+    <label id="sourceLabel" data-i18n="fromLang">From Language</label>
     <div class="field-content" id="sourceContent">
       <select id="sourceLang"></select>
     </div>
@@ -66,10 +72,10 @@
   <button id="swapButton" class="swap-icon" title="Swap Languages">↔</button>
 
   <div class="field">
-    <label id="targetLabel">To Myslovitze</label>
+    <label id="targetLabel" data-i18n="toLang">To Myslowitze</label>
     <div class="field-content" id="targetContent">
       <div id="targetLangBox" class="fixed-target-value">
-        <span class="lang-flag"></span> Myslovitze
+        <span class="lang-flag"></span> Myslowitze
       </div>
     </div>
   </div>
@@ -80,17 +86,17 @@
     </div>
 
     <div class="actions">
-      <button id="translateButton">Translate</button>
-      <button id="copyButton" type="button">Copy Result</button>
+      <button id="translateButton" data-i18n="translateBtn">Translate</button>
+      <button id="copyButton" type="button" data-i18n="copyBtn">Copy Result</button>
     </div>
 
     <div class="result">
-      <label>Translation Result</label>
-      <div id="translatedText" class="output">Translation will appear here.</div>
+      <label data-i18n="resultLabel">Translation Result</label>
+      <div id="translatedText" class="output" data-i18n="resultPlaceholder">Translation will appear here.</div>
     </div>
 
     <footer class="hint">
-      <span>SJP.pl Polish Dictionary</span> • Free City of Myslovitze
+      <span>SJP.pl Polish Dictionary</span> • Free City of Myslowitze
     </footer>
   </main>
 
