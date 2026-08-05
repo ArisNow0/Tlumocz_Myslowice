@@ -474,7 +474,7 @@ function setCurrentLanguage(lang) {
     if (langcur) {
         langcur.src = lang === 'mw' ? 'flag.jpg' :
             lang === 'ua' ? 'ua.png' :
-            lang === 'ru' ? 'Zov.jpg' :
+            lang === 'ru' ? 'ZOv.jpg' :
             lang === 'pl' ? 'pl.png' :
             lang === 'en' ? 'en.png' : '';
     }
