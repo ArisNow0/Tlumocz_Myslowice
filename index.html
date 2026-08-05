@@ -26,17 +26,23 @@
   <meta name="twitter:description" content="Translator into the Mysłowiöce language. | Tłumöcz na jōnzyk mysłowiocki.">
   <meta name="twitter:image" content="https://arisnow0.github.io/Tlumocz_Myslowice/flag.jpg">
 
-  <link rel="icon" type="image/png" href="/logo/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/logo/favicon.svg" />
-<link rel="shortcut icon" href="/logo/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="./logo/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./logo/favicon.svg" />
+<link rel="shortcut icon" href="./logo/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./logo/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Tłumöcz" />
-<link rel="manifest" href="/logo/site.webmanifest" />
+<link rel="manifest" href="./logo/site.webmanifest" />
 
 </head>
 <body>
 
   <div class="flag-stripe-vertical"></div>
+
+<div class="lang-switcher">
+  <img id="langcur">
+
+  div
+</div>
 
   <main class="translator-shell">
     <header class="header">
@@ -44,47 +50,47 @@
         <img src="logo.png" alt="Эмблема орла" />
       </div>
       <div>
-        <h1>Mysłowiöcki Tłumacz</h1>
-        <p class="subtitle">Oficjölny tłumöcz Wolne Miösto Mysłowiöce</p>
+        <h1>Myslovitze Translator</h1>
+        <p class="subtitle">Official Translator of the Free City of Myslovitze</p>
       </div>
     </header>
 
     <div class="controls">
   <div class="field">
-    <label id="sourceLabel">Z jonzyka</label>
+    <label id="sourceLabel">From Language</label>
     <div class="field-content" id="sourceContent">
       <select id="sourceLang"></select>
     </div>
   </div>
 
-  <button id="swapButton" class="swap-icon" title="Kiorunok tłumöczonia">↔</button>
+  <button id="swapButton" class="swap-icon" title="Swap Languages">↔</button>
 
   <div class="field">
-    <label id="targetLabel">Na Mysłowiöckiego</label>
+    <label id="targetLabel">To Myslovitze</label>
     <div class="field-content" id="targetContent">
       <div id="targetLangBox" class="fixed-target-value">
-        <span class="lang-flag"></span> Mysłowiöcki
+        <span class="lang-flag"></span> Myslovitze
       </div>
     </div>
   </div>
 </div>
 
     <div class="input-group">
-      <textarea id="sourceText" placeholder="Введите текст для перевода..."></textarea>
+      <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
     </div>
 
     <div class="actions">
-      <button id="translateButton">Tłumöczyć</button>
-      <button id="copyButton" type="button">Skopiuj wynik</button>
+      <button id="translateButton">Translate</button>
+      <button id="copyButton" type="button">Copy Result</button>
     </div>
 
     <div class="result">
-      <label>Wynik tłumöczonia</label>
-      <div id="translatedText" class="output">Tłumöczonie pojöwi się tutöj.</div>
+      <label>Translation Result</label>
+      <div id="translatedText" class="output">Translation will appear here.</div>
     </div>
 
     <footer class="hint">
-      <span>SJP.pl</span> • Wolne Miösto Mysłowiöce Portöl stönowy
+      <span>SJP.pl Polish Dictionary</span> • Free City of Myslovitze
     </footer>
   </main>
 

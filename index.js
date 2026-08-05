@@ -155,9 +155,15 @@ function generatePolishCandidates(word) {
 
 
 async function inventedToPolish(text) {
-    const exceptions = {
-        'Mysłowiöce': 'Mysłowice'
-    };
+  const exceptions = {
+    'Mysłowice': 'Mysłowiöce',
+    'Mysłowic': 'Mysłowiöc',
+    'Mysłowicom': 'Mysłowiöcom',
+    'Mysłowice': 'Mysłowiöce',
+    'Mysłowicami': 'Mysłowiöcami',
+    'Mysłowicach': 'Mysłowiöcach'
+  };
+
 
     let processedText = text;
     for (const [word, replacement] of Object.entries(exceptions)) {
@@ -202,7 +208,12 @@ function initializeModeButtons() {
 
 function polishToInventedLanguage(text) {
   const exceptions = {
-    'Mysłowice': 'Mysłowiöce'
+    'Mysłowice': 'Mysłowiöce',
+    'Mysłowic': 'Mysłowiöc',
+    'Mysłowicom': 'Mysłowiöcom',
+    'Mysłowice': 'Mysłowiöce',
+    'Mysłowicami': 'Mysłowiöcami',
+    'Mysłowicach': 'Mysłowiöcach'
   };
 
   const ALWAYS_REPLACEMENTS = {
